@@ -1,0 +1,279 @@
+/*初始化和公共样式部分*/
+blockquote, body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, input, legend, li, ol, p, pre, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+*{
+    margin:0;
+    padding:0;
+}
+.clear {
+    clear: both;
+}
+body{
+    font-size:12px;
+}
+/*遮罩*/
+.bar{ 
+    position:absolute;
+    left:0;
+    top:0;
+    background:#999;
+    opacity:.7;
+    z-index:999;
+}
+
+.boe{
+    width:1000px;
+    height:600px;
+    position:absolute;
+    top:150px;
+    left:400px;
+    background:#fff;
+    z-index:1001;
+    display: none;
+}
+.bool1{
+    position: absolute;
+    right: 0;
+}
+.bool2{
+    position: absolute;
+    top: 60px;
+    left: 100px;
+}
+.bool3{
+    width: 430px;
+    height: 60px;
+    position: relative;
+    top: 500px;
+    left: 0px;
+    margin:0 auto;
+}
+/*头部开始*/
+.header{
+    width:100%;
+    height:110px;
+    border-bottom:3px solid #F2F2F2;
+
+}
+.wrap{
+    width:990px;
+    margin:0 auto;
+}
+
+#logo{
+    width: 160px;
+    height: 50px;
+    float: left;
+    margin-top: 24px;
+    background:url(../images/1.jpg);
+}
+.logo-title{
+    height: 34px;
+    float: left;
+    line-height: 34px;
+    font-size: 24px;
+    color: #333;
+    margin-top: 34px;
+    margin-left:20px;
+}
+.header-r{
+    color:#999;
+    font-size:16px;
+    float: right;
+    margin-top:52px;
+}
+.header-r a{
+    color:#EE2222;
+}
+.header-r a:hover{
+    text-decoration:underline;
+    color:#C81623;
+}
+/*头部结束*/
+/*主体开始*/
+.main{
+    width:100%;
+    height:407px;
+}
+.main-f{
+    width:400px;
+    height:55px;
+    margin:80px auto 0;
+}
+.main-f-o{
+    width:24px;
+    height:24px;
+    line-height: 24px;
+    text-align: center;
+    color: #fff;
+    /*background-position: ;*/
+    background:url(../images/2.png)no-repeat 0px -200px;
+    float: left;
+}
+.main-f-o1{
+    width:123px;
+    height:10px;
+
+    background:url(../images/2.png)no-repeat 0px -100px;
+    float: left;
+    margin-top: 8px;
+}
+.main-f-o2{
+    width:24px;
+    height:24px;
+    line-height: 24px;
+    text-align: center;
+    color: #ccc;
+    background:url(../images/2.png)no-repeat -45px -200px;
+    float: left;
+    margin-left: 10px;
+}
+.main-titl{
+    font-size: 12px;
+    color: #33BB44;
+    float: left;
+    margin-left: -17px;
+}
+.main-titl1{
+    font-size: 12px;
+    color: #999;
+    float: left;
+    margin-left:90px;
+}
+.main-titl2{
+    font-size: 12px;
+    color: #999;
+    float: left;
+    margin-left:97px;
+}
+.main-kj{
+    width: 1200px;
+    height: 400px;
+    margin:0 auto;
+}
+.login-z-s{
+    width: 304px;
+    height: 38px;
+    border: 1px solid #bdbdbd;
+    position: relative;
+    margin-left:20px;
+    margin-top:30px;
+    margin: 0 auto;
+    top:50px;
+}
+/*用户名框样式*/
+#user{
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    width: 38px;
+    height: 38px;
+    border-right: 1px solid #bdbdbd;
+}
+/*input样式*/
+.text-o{
+    width: 254px;
+    height: 18px;
+    border: 0;
+    line-height: 18px;
+    padding: 10px 0 10px 50px;
+    float: none;
+    overflow: hidden;
+    font-size: 14px;
+}
+.login-z-x{
+    width: 306px;
+    height: 40px;
+    line-height: 38px;
+    border: 1px solid #bdbdbd;
+    position: relative;
+    margin-left:20px;
+    top:88px;
+    margin: 0 auto;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+}
+.main-btn{
+    position: relative;
+    top: 125px;
+    left:446px;
+}
+.main-kla{
+    width: 300px;
+    height: 277px;
+    margin: 0 auto;
+    position: relative;
+    top:-135px;
+}
+.main-f-o6{
+    width:24px;
+    height:24px;
+    background:url(../images/2.png)no-repeat 0px -161px;
+    float: left;
+}
+.main-f-o7{
+    width:24px;
+    height:24px;
+    background:url(../images/2.png)no-repeat -40px -161px;
+    float: left;
+    position:relative;
+    top: -16px;
+    left: 170px;
+}
+.main-yd{
+    position: relative;
+    top: 4px;
+    left:5px;
+}
+.main-yd2{
+    position: relative;
+    top: -12px;
+    left:175px;
+}
+/*主体结束*/
+/*尾部开始*/
+.footer{
+    width:990px;
+    height:86px;
+    margin:0 auto;
+    margin-top:20px;
+}
+.links{
+    width:990px;
+    height:18px;
+    text-align:center;
+}
+.links a{
+    color:#666;
+    font-size:12px;
+    padding:0 10px;
+}
+.links a:hover{
+    color: #E4393C;
+    text-decoration: underline; 
+}
+.copyright{
+    width:990px;
+    height:18px;
+    text-align:center;
+}
+.copyright p{
+    width:640px;
+    height: 20px;
+    color:#666;
+    font-size:12px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/*尾部结束

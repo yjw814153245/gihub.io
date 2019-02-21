@@ -1,0 +1,70 @@
+// 主题列表的样式
+ul.items{
+	width:100%;
+	height:rem(1000px);
+	margin: 0 auto;
+	li.item{
+		display: flex;
+		align-items: center;
+		height: rem(420px);
+		border-bottom: rem(1px) solid #ccc;
+		img{
+			width: rem(240px);
+			height: rem(300px);
+			border-radius: rem(10px);
+			margin-left: rem(50px);
+		}
+		
+		.cont{
+			height: rem(500px);
+			flex:1;
+			color:#333;
+			font-size: rem(32px);
+			// overflow: hidden;
+			// white-space: nowrap;
+			// text-overflow: ellipsis;
+			margin: 0 rem(40px);
+			.title{
+				// display: flex;
+				color:#333;
+				font-size: rem(30px);
+				overflow: hidden;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				// margin: 0 rem(40px);
+				margin-top: rem(100px);
+			}
+			.info{
+				// white-space: wrap;
+				text-overflow: ellipsis;
+				overflow: hidden;
+				// white-space: nowrap;
+				height: rem(176px);
+				margin: rem(10px) 0;
+				
+			}
+			.author{
+				font-size: rem(30px);
+				// margin-bottom: rem(30px);
+			}
+		}
+		.classname1{
+			font-size: rem(25px);
+			position: absolute;
+			right: rem(120px);
+			margin-top: rem(160px);
+			border: 1px solid #E5E6E8;
+			color: #969BA3;
+			padding: rem(10px);
+		}
+		.classname2{
+			font-size: rem(25px);
+			position: absolute;
+			right: rem(50px);
+			margin-top: rem(160px);
+			border: 1px solid #FBD0D2;
+			color: #ED424B;
+			padding: rem(10px);
+		}
+	}
+}

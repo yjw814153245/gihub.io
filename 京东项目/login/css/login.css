@@ -1,0 +1,296 @@
+/*初始化和公共样式部分*/
+blockquote, body, button, dd, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, hr, input, legend, li, ol, p, pre, td, textarea, th, ul {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+*{
+    margin:0;
+    padding:0;
+}
+.clear {
+    clear: both;
+}
+body{
+    font-size:12px;
+}
+/*主体*/
+.subject{
+    width:100%;
+    height:700px;
+    background:#fff;
+}
+/*头部开始*/
+.header{
+    width:100%;
+    height:80px;
+}
+.wrap{
+    width:990px;
+    margin:0 auto;
+}
+
+#logo{
+    position: relative;
+    width: 300px;
+    margin: 10px 0;
+    height: 60px;
+    float: left;
+}
+.header-r{
+    color:#999;
+    font-size:12px;
+    position: relative;
+    float: right;
+    top:52px;
+}
+.header-r a{
+    color:#999;
+}
+.header-r a:hover{
+    text-decoration:underline;
+    color:#E4393C;
+}
+.heade{
+    width:100%;
+    background: #fff8f0;
+    text-align:center;
+}
+.heade div{
+    width:90%;
+    display: inline-block;
+}
+.heade img{
+    position:relative;
+    top:3px;
+    right:5px;
+}
+.heade p{
+    color:#999;
+    width:100%;
+    font-size:12px;
+    text-align:center;
+    line-height:39px;
+    vertical-align: middle;
+    display: inline-block;
+}
+.heade a{
+    color:#333;
+}
+.heade a:hover{
+    text-decoration:underline;
+}
+/*头部结束*/
+/*主体开始*/
+.main{
+    width:100%;
+    height:475px;
+    margin:0 auto;
+    background:#6B13FF;
+}
+.main-z{
+    width:990px;
+    margin:0 auto;
+}
+.main-l{
+    height:475px;
+    text-align:center;
+    background:url(../images/1.jpg)no-repeat center;
+
+}
+.main-r{
+    width:346px;
+    height:428px;
+    position: relative;
+    z-index: 4;
+    background: #fff;
+    width: 346px;
+    float:right;
+    top:10px;
+}
+.login-s{
+    background: #fff8f0;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+.login-z-l{
+    width:172px;
+    height:54px;
+    font-size:18px;
+    text-align:center;
+    line-height:55px;
+    float:left;
+    color:#7F667F;
+    border-right:1px solid #F4F4F4;
+}
+.login-z-l a{
+
+}
+.login-z-l a:hover{
+    color:#E4393C;
+    font-weight:600;
+}
+.login-z-r{
+    width:173px;
+    height:54px;
+    font-size:18px;
+    text-align:center;
+    line-height:55px;
+    float:left;
+    color:#7F667F;
+}
+.login-z-r a:hover{
+    color:#E4393C;
+    font-weight:600;
+}
+.formlogin{
+    width:306px;
+    height:192px;
+}
+.login-z-s{
+    width: 304px;
+    height: 38px;
+    border: 1px solid #bdbdbd;
+    position: relative;
+    margin-left:20px;
+    margin-top:30px;
+    
+}
+/*用户名框样式*/
+#user{
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    width: 38px;
+    height: 38px;
+    border-right: 1px solid #bdbdbd;
+    background:url(../images/5.png);
+}
+/*input样式*/
+.text-o{
+    width: 254px;
+    height: 18px;
+    border: 0;
+    line-height: 18px;
+    padding: 10px 0 10px 50px;
+    float: none;
+    overflow: hidden;
+    font-size: 14px;
+}
+.login-z-x{
+    width: 304px;
+    height: 38px;
+    border: 1px solid #bdbdbd;
+    position: relative;
+    margin-left:20px;
+    margin-top:30px;
+    
+}
+/*密码框样式*/
+#pwd{
+    width: 38px;
+    height: 38px;
+    border-right: 1px solid #bdbdbd;
+    position: absolute;
+    top: 0;
+    left:0;
+    z-index: 3;
+    background:url(../images/5.png) ;
+    background-position: -48px 0;
+}
+/*忘记密码*/
+/*.wpwd{
+    width:48px;
+    height:14px;
+}*/
+.wpwd a{
+    width:48px;
+    height:14px;
+    position:relative;
+    top:22px;
+    margin-left:268px;
+    float:left;
+}
+.wpwd a:hover{
+    color: #E4393C;
+    text-decoration: underline; 
+}
+/*登录按钮*/
+.login-btn{
+    width:303px;
+    height:33px;
+    border: 1px solid #e85356;
+    background: #e4393c;
+    line-height:33px;
+    margin-top:50px;
+    margin-left:21px;
+    text-align:center;
+}
+.login-btn button{
+    font-size:18px;
+    color:#fff;
+    padding:20px;
+    letter-spacing:8px;
+}
+/*其他登录*/
+.login-b{
+    width:344px;
+    height:51px;
+    background:#FCFCFC;
+    position:absolute;
+    bottom:0;
+    /*border:1px solid red;*/
+}
+.longin-b1{
+    margin-top: 13px;
+}
+.login-b ul li:first-child{
+    width:20px;
+    height: 18px;
+    position:relative;
+    top:20px;
+    left:20px;
+    background: url(../images/6.png) no-repeat;
+    background-position: 0 0; 
+}
+
+/*尾部开始*/
+.footer{
+    width:990px;
+    height:86px;
+    margin:0 auto;
+    margin-top:20px;
+}
+.links{
+    width:990px;
+    height:18px;
+    text-align:center;
+}
+.links a{
+    color:#666;
+    font-size:12px;
+    padding:0 10px;
+}
+.links a:hover{
+    color: #E4393C;
+    text-decoration: underline; 
+}
+.copyright{
+    width:990px;
+    height:18px;
+    text-align:center;
+}
+.copyright p{
+    color:#666;
+    font-size:12px;
+    margin-top:10px;
+}
+/*尾部结束*/
