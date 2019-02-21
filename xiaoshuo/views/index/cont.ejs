@@ -1,0 +1,26 @@
+<% include header %>
+    <div class="container">
+        <div class="row clearfix">
+            <div class="col-md-12 column">
+                <h3 class="text-center">
+                    <% chapter.forEach(function(value){ %>
+                    <%=value.title %> <h6>章节列表</h6>
+                  <% }) %>
+                </h3>
+                <div class="col-md-12 column cont1">
+                    <ul class="conts">
+                        <% chapter.forEach(function(value){ %>
+                          <li><a href="/conts/<%=value._id%>"><%=value.keywords%></a></li>
+                        <% }) %>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="row clearfix">
+            <div class="col-md-12 column">
+            </div>
+        </div>
+    </div>
+
+<% include footer %>

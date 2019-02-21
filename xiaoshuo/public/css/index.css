@@ -1,0 +1,36 @@
+*{margin:0;padding: 0;}
+ul,ol{list-style: none;}
+/*首页*/
+.myfooter a{margin: 0 10px;}
+ .navs{
+    /*background-color: #3e3d43;
+    color: #fff;*/
+    background-color: #3e3d43;
+    color: #fff;
+}
+.carousel-control .lhs{
+    line-height: auto;
+    text-align: center;
+    background-image:none;
+    border-radius: 50%;
+    opacity: 0.3 
+}
+.hangg a{
+    line-height:50px;
+}
+.cont1{
+    border:1px solid #000;
+}
+.conts{
+    /*border:1px solid #000;*/
+}
+
+.conts li{
+    width: 30%;
+    float: left;
+}
+.tcent{
+    text-align: center;
+    margin: 0 auto;
+    margin-left: 44%;
+}

@@ -1,0 +1,56 @@
+<% include header %>
+<style type="text/css">
+    #qz td{
+        line-height: 50px;
+    }
+</style>
+<ol class="breadcrumb">
+    <li class="text-info">小说管理</li>
+    <li class="active">小说目录</li>
+</ol>
+
+<div class="row">
+    <div class="col-md-12">
+        <table class="table table-hover datalist">
+            <caption><h3>小说目录</h3></caption>
+            <thead>
+                <tr>
+                    <td>小说封面</td>
+                    <td>小说分类</td>
+                    <td>小说昵称</td>
+                    <td>章节名</td>
+                    <td>发布时间</td>
+                    <td>操作</td>
+                </tr>               
+            </thead>
+            <% chapters.forEach(function(val){ %>
+                <tr id="qz">
+                    <td><img src="/<%=val.imgurl%>" alt="" style="width:50px;height:50px;"></td>    
+                    <td><%=val.itemId.name%></td>
+                    <td><%=val.title%></td>
+                    <td><%=val.keywords%></td>
+                    <td><%= val.ctime.toLocaleString()%> </td>
+                    <td>
+                        <a href="/admin/chapterEdit/<%=val._id%>">编辑</a>
+                        |
+                        <a href="/admin/chapterRemove/<%=val._id%>" onclick="return confirm('您确定要删除吗？')">删除</a>
+                    </td>
+                </tr>
+            <% }) %>    
+        </table>
+        <!-- 分页 -->
+        <nav aria-label="Page navigation">
+          <ul class="pagination">
+            <li><a href="/admin/chapterList">首页</a></li>
+            <li><a href="/admin/chapterList?page=<%=page-1%>">上一页</a></li>
+            <% for(var i=1;i<=maxPage;i++){ %>
+                <li><a href="/admin/chapterList?page=<%=i%>"><%=i%></a></li>
+            <% } %>
+            <li><a href="/admin/chapterList?page=<%=-(-page-1)%>">下一页</a></li>
+            <li><a href="/admin/chapterList?page=<%=maxPage%>">尾页</a></li>
+          </ul>
+        </nav>
+        <!-- 分页 end -->
+    </div>
+</div>
+<% include footer %>

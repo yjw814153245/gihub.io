@@ -1,0 +1,35 @@
+<% include header %>
+<ol class="breadcrumb">
+    <li class="text-info">账号管理</li>
+    <li class="active">账号列表</li>
+</ol>
+
+<div class="row">
+    <div class="col-md-12">
+        <table class="table table-hover datalist">
+            <thead>
+                <tr>
+                    <!-- <td>ID</td> -->
+                    <td>账号名称</td>
+                    <td>状态</td>
+                    <td>添加时间</td>
+                    <td>操作</td>
+                </tr>
+            </thead>
+            <% admin.forEach(function(val){ %>
+                <tr>
+                    <!-- <td><%=val.ID%></td> -->
+                    <td><%=val.name%></td>
+                    <td><%=val.state%></td>
+                    <td><%= val.ctime.toLocaleString()%> </td>
+                    <td>
+                        <a href="/admin/adminEdit/<%=val._id%>">编辑</a>
+                        |
+                        <a href="/admin/adminRemove/<%=val._id%>" onclick="return confirm('你确定要删除吗？')">删除</a>
+                    </td>
+                </tr>
+            <% }) %>
+        </table>
+    </div>
+</div>
+<% include footer %>

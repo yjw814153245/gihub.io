@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link href="/css/bootstrap1.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+    <div class="container">
+      <div class="row clearfix">
+        <div class="col-md-4 column text-center" style="border:1px solid #000;padding-top:10px;">
+        <br>
+          <img alt="140x140" src="img/a5.jpg" class="img-rounded" />
+          <h4>
+            id05a648b26a
+          </h4><button type="button" class="btn btn-default">修改头像</button>
+          <div class="list-group">
+             <a href="#" class="list-group-item active">个人中心</a>
+            <div class="list-group-item">
+              修改资料
+            </div>
+            <div class="list-group-item">
+            修改密码
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8 column" style="border:1px solid #000;">
+          <h3>
+           个人信息
+          </h3>
+          <table border="1" cellspacing="0" cellspadding="0" >
+            <form action="#" method="post" enctype="multipart/form-data">
+                <tr>
+                    <td>修改用户名:</td>
+                    <td><input type="text" name="username"></td>
+                </tr>
+                <tr>
+                    <td>修改密　码:</td>
+                    <td><input type="password" name="password"></td>
+                </tr>
+                <tr>
+                    <td>性　别:</td>
+                    <td><input type="radio" name="sex">男
+                         <input type="radio" name="sex">女
+                         <input type="radio" name="sex">保密</td>
+                </tr>
+                <tr>
+                    <td>喜爱种类:</td>
+                    <td> 
+                    <input type="checkbox" name="multiCheck[]">玄幻
+                    <input type="checkbox" name="multiCheck[]">科幻
+                    <input type="checkbox" name="multiCheck[]">奇幻
+                    <input type="checkbox" name="multiCheck[]">游戏
+                    <input type="checkbox" name="multiCheck[]">武侠
+                    <input type="checkbox" name="multiCheck[]">都市
+                    </td>
+                </tr>
+                <tr>
+                    <td>城　市:</td>
+                    <td>
+                    <select name="city">
+                    <option><--请选择--></option>
+                    <option value="bj">北京</option>
+                    <option value="sh">上海</option>
+                    <option value="gz">广州</option>
+                    <option value="sz">深圳</option>
+                    <option value="fs">佛山</option>
+                    </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>个人介绍:</td>
+                    <td> <textarea name="text" rows="6" cols="35">
+                        </textarea>
+                    </td>
+                </tr>
+                 <tr>
+                    
+                    <td>文件上传</td>
+                    <td> <input type="file">
+
+                        </textarea>
+                    </td>
+                </tr>
+
+                 <tr style="text-align:center;">
+                    <td colspan="2">
+                    <input type="reset" value="重置">
+                    &nbsp; &nbsp; &nbsp; &nbsp;
+                    <input type="submit" value="确定">
+                    </td>
+                    <td></td>
+                </tr>
+                <br>
+            </form>
+          </table>
+
+        </div>
+      </div>
+    </div>
+</body>
+</html>

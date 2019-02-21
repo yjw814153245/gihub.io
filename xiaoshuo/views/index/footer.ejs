@@ -1,0 +1,18 @@
+   <!-- 底部 -->
+    <div class="container myfooter">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">友情链接</h3>
+        </div>
+        <div class="panel-body">
+          <% friends.forEach(function(vals){ %>
+          <a href="<%=vals.address%>"><%=vals.name%></a>
+          <% }) %>
+        </div>
+      </div>    
+    </div>
+
+    <script src="/js/jquery-1.12.4.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+  </body>
+</html>

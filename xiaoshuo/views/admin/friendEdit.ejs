@@ -1,0 +1,35 @@
+<% include header %>
+<ol class="breadcrumb">
+    <li class="text-info">友情链接</li>
+    <li class="active">友链编辑</li>
+</ol>
+
+<div class="row formAdd">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+        <h3><div class="text-center">修改信息</div></h3>
+        <form action="/admin/friendUpdate" method="post">
+            <input type="hidden" name="_id" value="<%=data._id%>">
+            <div class="input-group">
+              <span class="input-group-addon">修改友链名称</span>
+              <input type="text" class="form-control" name="name"  value="<%=data.name%>">
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon">修改友链网址</span>
+              <input type="text" class="form-control" name="address"  value="<%=data.address%>">
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon">修改链接简述</span>
+              <input type="text" class="form-control" name="sketch" value="<%=data.sketch%>">
+            </div>   
+            
+            <div class="center-block text-center ctr">
+              <input type="submit" class="btn btn-success" value="确认修改">
+            </div>
+
+        </form>     
+    </div>
+    <div class="col-md-3"></div>
+</div>
+
+<% include footer %>

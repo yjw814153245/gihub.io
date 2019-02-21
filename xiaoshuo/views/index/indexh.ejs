@@ -1,0 +1,45 @@
+<% include header %>
+    <% works.forEach(function(val){ %>
+       <a href="/indexs/<%=val.id%>"></a>
+        <div class="container">
+            <div class="row clearfix">
+                <div class="col-md-12 column">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="thumbnail">
+                                <div class="caption">
+                                <h3>小说列表</h3>
+                                <h5>[<%=val.name%>]<%=val.synopsis%></h4>
+                                <% chapter.forEach(function(val){ %>                       
+                                    <h5>
+                                        <a href="/cont/<%=val._id%>"><%=val.title%></a>
+                                    </h5>
+                                    <p>
+                                        
+                                    </p>
+                                <% }) %>       
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 分页 -->
+        <nav aria-label="Page navigation">
+          <ul class="pagination text-center tcent">
+            <li><a href="/indexs/<%=val.id%>">首页</a></li>
+            <li><a href="/indexs/<%=val.id%>?page=<%=page-1%>">上一页</a></li>
+            <% for(var i=1;i<=maxPage;i++){ %>
+                <li><a href="/indexs/<%=val.id%>?page=<%=i%>"><%=i%></a></li>
+            <% } %>
+            <li><a href="/indexs/<%=val.id%>?page=<%=-(-page-1)%>">下一页</a></li>
+            <li><a href="/indexs/<%=val.id%>?page=<%=maxPage%>">尾页</a></li>
+          </ul>
+        </nav>
+        <!-- 分页 end --> 
+            
+    <% }) %>
+
+<% include footer %>

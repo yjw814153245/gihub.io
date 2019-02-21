@@ -1,0 +1,35 @@
+<% include header %>
+<ol class="breadcrumb">
+    <li class="text-info">友情链接</li>
+    <li class="active">友链列表</li>
+</ol>
+
+<div class="row">
+    <div class="col-md-12">
+        <table class="table table-hover datalist">
+            <thead>
+                <tr>
+                    <td>友链名称</td>
+                    <td>友链网址</td>
+                    <td>友链简述</td>
+                    <td>创建时间</td>
+                    <td>操作</td>
+                </tr>
+            </thead>
+            <% friend.forEach(function(val){ %>
+                <tr>
+                    <td><%=val.name%></td>
+                    <td><%=val.address%></td>
+                    <td><%=val.sketch%></td>
+                    <td><%= val.ctime.toLocaleString()%> </td>
+                    <td>
+                        <a href="/admin/friendEdit/<%=val._id%>">编辑</a>
+                        |
+                        <a href="/admin/friendRemove/<%=val._id%>" onclick="return confirm('你确定要删除吗？')">删除</a>
+                    </td>
+                </tr>
+            <% }) %>
+        </table>
+    </div>
+</div>
+<% include footer %>
